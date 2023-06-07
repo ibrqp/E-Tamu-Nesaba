@@ -9,4 +9,6 @@ namespace Camera_Record.Kelas
         public static OleDbConnection conn = new OleDbConnection("provider=Microsoft.ACE.OleDB.12.0; Data Source="+ pathDB + "\\dbsiswa.mdb");
 
     }
+
+    
 }
