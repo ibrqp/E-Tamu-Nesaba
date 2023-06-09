@@ -1,6 +1,6 @@
 ﻿namespace Camera_Record
 {
-    partial class Form1
+    partial class Form5
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.labelAlamat = new System.Windows.Forms.Label();
-            this.labelNoHp = new System.Windows.Forms.Label();
-            this.labelAsalSekolah = new System.Windows.Forms.Label();
-            this.textBox_AsalSekolah = new System.Windows.Forms.TextBox();
-            this.labelNama = new System.Windows.Forms.Label();
-            this.textBox_NoHp = new System.Windows.Forms.TextBox();
-            this.textBox_Nama = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
+            this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.textBox_Alamat = new System.Windows.Forms.TextBox();
+            this.textBox_Nama = new System.Windows.Forms.TextBox();
+            this.textBox_NoHp = new System.Windows.Forms.TextBox();
+            this.labelNama = new System.Windows.Forms.Label();
+            this.textBox_AsalSekolah = new System.Windows.Forms.TextBox();
+            this.labelAsalSekolah = new System.Windows.Forms.Label();
+            this.labelNoHp = new System.Windows.Forms.Label();
+            this.labelAlamat = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -73,10 +66,12 @@
             this.radioButton3 = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.radioButton2 = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.radioButton1 = new Bunifu.UI.WinForms.BunifuRadioButton();
-            this.bunifuGroupBox2 = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.videoSourcePlayer1 = new AForge.Controls.VideoSourcePlayer();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new AForge.Controls.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -87,182 +82,105 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // bunifuGroupBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(808, 138);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(395, 21);
-            this.comboBox1.TabIndex = 4;
-            // 
-            // videoSourcePlayer1
-            // 
-            this.videoSourcePlayer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
-            this.videoSourcePlayer1.Location = new System.Drawing.Point(814, 208);
-            this.videoSourcePlayer1.Name = "videoSourcePlayer1";
-            this.videoSourcePlayer1.Size = new System.Drawing.Size(393, 385);
-            this.videoSourcePlayer1.TabIndex = 5;
-            this.videoSourcePlayer1.Text = "videoSourcePlayer2";
-            this.videoSourcePlayer1.VideoSource = null;
-            this.videoSourcePlayer1.NewFrame += new AForge.Controls.VideoSourcePlayer.NewFrameHandler(this.videoSourcePlayer1_NewFrame_1);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1209, 138);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Webcam";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 43);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(591, 46);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(417, 29);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Voting Stand Pameran Jurusan Terbaik";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(813, 664);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(391, 48);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Hasil";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.videoSourcePlayer1);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Location = new System.Drawing.Point(-1, -3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1384, 786);
-            this.panel1.TabIndex = 12;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(813, 602);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(391, 48);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "VOTING";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // labelAlamat
-            // 
-            this.labelAlamat.AutoSize = true;
-            this.labelAlamat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAlamat.Location = new System.Drawing.Point(30, 258);
-            this.labelAlamat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelAlamat.Name = "labelAlamat";
-            this.labelAlamat.Size = new System.Drawing.Size(77, 24);
-            this.labelAlamat.TabIndex = 32;
-            this.labelAlamat.Text = "Alamat :";
-            // 
-            // labelNoHp
-            // 
-            this.labelNoHp.AutoSize = true;
-            this.labelNoHp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNoHp.Location = new System.Drawing.Point(30, 186);
-            this.labelNoHp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNoHp.Name = "labelNoHp";
-            this.labelNoHp.Size = new System.Drawing.Size(75, 24);
-            this.labelNoHp.TabIndex = 31;
-            this.labelNoHp.Text = "No Hp :";
-            // 
-            // labelAsalSekolah
-            // 
-            this.labelAsalSekolah.AutoSize = true;
-            this.labelAsalSekolah.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAsalSekolah.Location = new System.Drawing.Point(29, 107);
-            this.labelAsalSekolah.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelAsalSekolah.Name = "labelAsalSekolah";
-            this.labelAsalSekolah.Size = new System.Drawing.Size(129, 24);
-            this.labelAsalSekolah.TabIndex = 30;
-            this.labelAsalSekolah.Text = "Asal Sekolah :";
-            // 
-            // textBox_AsalSekolah
-            // 
-            this.textBox_AsalSekolah.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_AsalSekolah.Location = new System.Drawing.Point(172, 86);
-            this.textBox_AsalSekolah.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_AsalSekolah.Name = "textBox_AsalSekolah";
-            this.textBox_AsalSekolah.Size = new System.Drawing.Size(500, 53);
-            this.textBox_AsalSekolah.TabIndex = 34;
-            this.textBox_AsalSekolah.TextChanged += new System.EventHandler(this.textBox_AsalSekolah_TextChanged);
-            // 
-            // labelNama
-            // 
-            this.labelNama.AutoSize = true;
-            this.labelNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNama.Location = new System.Drawing.Point(29, 35);
-            this.labelNama.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelNama.Name = "labelNama";
-            this.labelNama.Size = new System.Drawing.Size(70, 24);
-            this.labelNama.TabIndex = 29;
-            this.labelNama.Text = "Nama :";
-            // 
-            // textBox_NoHp
-            // 
-            this.textBox_NoHp.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_NoHp.Location = new System.Drawing.Point(172, 163);
-            this.textBox_NoHp.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_NoHp.Name = "textBox_NoHp";
-            this.textBox_NoHp.Size = new System.Drawing.Size(500, 53);
-            this.textBox_NoHp.TabIndex = 35;
-            // 
-            // textBox_Nama
-            // 
-            this.textBox_Nama.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Nama.Location = new System.Drawing.Point(172, 11);
-            this.textBox_Nama.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_Nama.Name = "textBox_Nama";
-            this.textBox_Nama.Size = new System.Drawing.Size(500, 53);
-            this.textBox_Nama.TabIndex = 33;
-            this.textBox_Nama.TextChanged += new System.EventHandler(this.textBox_Nama_TextChanged);
+            this.bunifuGroupBox1.BackColor = System.Drawing.Color.LightSlateGray;
+            this.bunifuGroupBox1.Location = new System.Drawing.Point(47, 95);
+            this.bunifuGroupBox1.Name = "bunifuGroupBox1";
+            this.bunifuGroupBox1.Size = new System.Drawing.Size(718, 639);
+            this.bunifuGroupBox1.TabIndex = 39;
             // 
             // textBox_Alamat
             // 
             this.textBox_Alamat.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Alamat.Location = new System.Drawing.Point(172, 238);
+            this.textBox_Alamat.Location = new System.Drawing.Point(210, 349);
             this.textBox_Alamat.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Alamat.Name = "textBox_Alamat";
             this.textBox_Alamat.Size = new System.Drawing.Size(500, 53);
-            this.textBox_Alamat.TabIndex = 36;
+            this.textBox_Alamat.TabIndex = 47;
+            // 
+            // textBox_Nama
+            // 
+            this.textBox_Nama.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Nama.Location = new System.Drawing.Point(210, 119);
+            this.textBox_Nama.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_Nama.Name = "textBox_Nama";
+            this.textBox_Nama.Size = new System.Drawing.Size(500, 53);
+            this.textBox_Nama.TabIndex = 44;
+            this.textBox_Nama.TextChanged += new System.EventHandler(this.textBox_Nama_TextChanged_1);
+            // 
+            // textBox_NoHp
+            // 
+            this.textBox_NoHp.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_NoHp.Location = new System.Drawing.Point(210, 274);
+            this.textBox_NoHp.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_NoHp.Name = "textBox_NoHp";
+            this.textBox_NoHp.Size = new System.Drawing.Size(500, 53);
+            this.textBox_NoHp.TabIndex = 46;
+            // 
+            // labelNama
+            // 
+            this.labelNama.AutoSize = true;
+            this.labelNama.BackColor = System.Drawing.Color.LightSlateGray;
+            this.labelNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNama.Location = new System.Drawing.Point(73, 140);
+            this.labelNama.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNama.Name = "labelNama";
+            this.labelNama.Size = new System.Drawing.Size(70, 24);
+            this.labelNama.TabIndex = 40;
+            this.labelNama.Text = "Nama :";
+            // 
+            // textBox_AsalSekolah
+            // 
+            this.textBox_AsalSekolah.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_AsalSekolah.Location = new System.Drawing.Point(210, 197);
+            this.textBox_AsalSekolah.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox_AsalSekolah.Name = "textBox_AsalSekolah";
+            this.textBox_AsalSekolah.Size = new System.Drawing.Size(500, 53);
+            this.textBox_AsalSekolah.TabIndex = 45;
+            // 
+            // labelAsalSekolah
+            // 
+            this.labelAsalSekolah.AutoSize = true;
+            this.labelAsalSekolah.BackColor = System.Drawing.Color.LightSlateGray;
+            this.labelAsalSekolah.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAsalSekolah.Location = new System.Drawing.Point(67, 218);
+            this.labelAsalSekolah.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAsalSekolah.Name = "labelAsalSekolah";
+            this.labelAsalSekolah.Size = new System.Drawing.Size(129, 24);
+            this.labelAsalSekolah.TabIndex = 41;
+            this.labelAsalSekolah.Text = "Asal Sekolah :";
+            // 
+            // labelNoHp
+            // 
+            this.labelNoHp.AutoSize = true;
+            this.labelNoHp.BackColor = System.Drawing.Color.LightSlateGray;
+            this.labelNoHp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNoHp.Location = new System.Drawing.Point(67, 295);
+            this.labelNoHp.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelNoHp.Name = "labelNoHp";
+            this.labelNoHp.Size = new System.Drawing.Size(75, 24);
+            this.labelNoHp.TabIndex = 42;
+            this.labelNoHp.Text = "No Hp :";
+            // 
+            // labelAlamat
+            // 
+            this.labelAlamat.AutoSize = true;
+            this.labelAlamat.BackColor = System.Drawing.Color.LightSlateGray;
+            this.labelAlamat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAlamat.Location = new System.Drawing.Point(73, 370);
+            this.labelAlamat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelAlamat.Name = "labelAlamat";
+            this.labelAlamat.Size = new System.Drawing.Size(77, 24);
+            this.labelAlamat.TabIndex = 43;
+            this.labelAlamat.Text = "Alamat :";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.groupBox2.Controls.Add(this.bunifuLabel9);
             this.groupBox2.Controls.Add(this.bunifuLabel8);
             this.groupBox2.Controls.Add(this.bunifuLabel7);
@@ -290,16 +208,15 @@
             this.groupBox2.Controls.Add(this.radioButton3);
             this.groupBox2.Controls.Add(this.radioButton2);
             this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(20, 292);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(58, 437);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(685, 279);
-            this.groupBox2.TabIndex = 37;
+            this.groupBox2.Size = new System.Drawing.Size(685, 270);
+            this.groupBox2.TabIndex = 49;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pilih Jurusan Terbaik";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter_1);
             // 
             // bunifuLabel9
             // 
@@ -309,7 +226,7 @@
             this.bunifuLabel9.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel9.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel9.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel9.Location = new System.Drawing.Point(569, 259);
+            this.bunifuLabel9.Location = new System.Drawing.Point(569, 279);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel9.Size = new System.Drawing.Size(59, 15);
@@ -327,7 +244,7 @@
             this.bunifuLabel8.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel8.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel8.Location = new System.Drawing.Point(467, 256);
+            this.bunifuLabel8.Location = new System.Drawing.Point(467, 276);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel8.Size = new System.Drawing.Size(81, 15);
@@ -336,7 +253,6 @@
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel8.Visible = false;
-            this.bunifuLabel8.Click += new System.EventHandler(this.bunifuLabel8_Click);
             // 
             // bunifuLabel7
             // 
@@ -346,7 +262,7 @@
             this.bunifuLabel7.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel7.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel7.Location = new System.Drawing.Point(335, 256);
+            this.bunifuLabel7.Location = new System.Drawing.Point(335, 276);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(15, 15);
@@ -364,7 +280,7 @@
             this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel6.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel6.Location = new System.Drawing.Point(207, 259);
+            this.bunifuLabel6.Location = new System.Drawing.Point(207, 279);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(21, 15);
@@ -382,7 +298,7 @@
             this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel5.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel5.Location = new System.Drawing.Point(80, 259);
+            this.bunifuLabel5.Location = new System.Drawing.Point(80, 279);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(73, 15);
@@ -400,7 +316,7 @@
             this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel4.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel4.Location = new System.Drawing.Point(581, 127);
+            this.bunifuLabel4.Location = new System.Drawing.Point(581, 147);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel4.Size = new System.Drawing.Size(23, 15);
@@ -418,7 +334,7 @@
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel3.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel3.Location = new System.Drawing.Point(395, 127);
+            this.bunifuLabel3.Location = new System.Drawing.Point(395, 147);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(46, 15);
@@ -436,7 +352,7 @@
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuLabel2.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel2.Location = new System.Drawing.Point(220, 127);
+            this.bunifuLabel2.Location = new System.Drawing.Point(220, 147);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(22, 15);
@@ -454,7 +370,7 @@
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel1.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuLabel1.Location = new System.Drawing.Point(152, 127);
+            this.bunifuLabel1.Location = new System.Drawing.Point(152, 147);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(28, 15);
@@ -463,13 +379,12 @@
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             this.bunifuLabel1.Visible = false;
-            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // pictureBox10
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = global::Camera_Record.Properties.Resources.brodcast_removebg_preview;
-            this.pictureBox10.Location = new System.Drawing.Point(565, 159);
+            this.pictureBox10.Location = new System.Drawing.Point(565, 179);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(63, 95);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -480,7 +395,7 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Image = global::Camera_Record.Properties.Resources.titl_removebg_preview;
-            this.pictureBox9.Location = new System.Drawing.Point(183, 154);
+            this.pictureBox9.Location = new System.Drawing.Point(183, 174);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(65, 95);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -491,7 +406,7 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = global::Camera_Record.Properties.Resources.busana_removebg_preview;
-            this.pictureBox8.Location = new System.Drawing.Point(378, 43);
+            this.pictureBox8.Location = new System.Drawing.Point(378, 63);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(63, 83);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -502,7 +417,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::Camera_Record.Properties.Resources.meka_removebg_preview;
-            this.pictureBox7.Location = new System.Drawing.Point(441, 159);
+            this.pictureBox7.Location = new System.Drawing.Point(441, 179);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(63, 83);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -513,7 +428,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::Camera_Record.Properties.Resources.oto_removebg_preview;
-            this.pictureBox6.Location = new System.Drawing.Point(62, 152);
+            this.pictureBox6.Location = new System.Drawing.Point(62, 172);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(63, 102);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -524,7 +439,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::Camera_Record.Properties.Resources.dkv_removebg_preview;
-            this.pictureBox5.Location = new System.Drawing.Point(248, 43);
+            this.pictureBox5.Location = new System.Drawing.Point(248, 63);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(63, 83);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -535,7 +450,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::Camera_Record.Properties.Resources.elctro_removebg_preview;
-            this.pictureBox4.Location = new System.Drawing.Point(310, 159);
+            this.pictureBox4.Location = new System.Drawing.Point(310, 179);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(63, 83);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -546,7 +461,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Camera_Record.Properties.Resources.tjkt_removebg_preview;
-            this.pictureBox3.Location = new System.Drawing.Point(512, 43);
+            this.pictureBox3.Location = new System.Drawing.Point(512, 63);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(63, 83);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -557,7 +472,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Camera_Record.Properties.Resources.pplg_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(130, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(130, 63);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(62, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -571,7 +486,7 @@
             this.radioButton9.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.radioButton9.BorderThickness = 1;
             this.radioButton9.Checked = false;
-            this.radioButton9.Location = new System.Drawing.Point(518, 175);
+            this.radioButton9.Location = new System.Drawing.Point(518, 195);
             this.radioButton9.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -590,7 +505,7 @@
             this.radioButton8.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.radioButton8.BorderThickness = 1;
             this.radioButton8.Checked = false;
-            this.radioButton8.Location = new System.Drawing.Point(136, 180);
+            this.radioButton8.Location = new System.Drawing.Point(136, 200);
             this.radioButton8.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -609,7 +524,7 @@
             this.radioButton7.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.radioButton7.BorderThickness = 1;
             this.radioButton7.Checked = false;
-            this.radioButton7.Location = new System.Drawing.Point(321, 61);
+            this.radioButton7.Location = new System.Drawing.Point(321, 81);
             this.radioButton7.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -628,7 +543,7 @@
             this.radioButton6.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.radioButton6.BorderThickness = 1;
             this.radioButton6.Checked = false;
-            this.radioButton6.Location = new System.Drawing.Point(381, 180);
+            this.radioButton6.Location = new System.Drawing.Point(381, 200);
             this.radioButton6.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -647,7 +562,7 @@
             this.radioButton5.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.radioButton5.BorderThickness = 1;
             this.radioButton5.Checked = false;
-            this.radioButton5.Location = new System.Drawing.Point(13, 177);
+            this.radioButton5.Location = new System.Drawing.Point(13, 197);
             this.radioButton5.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -666,7 +581,7 @@
             this.radioButton4.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.radioButton4.BorderThickness = 1;
             this.radioButton4.Checked = false;
-            this.radioButton4.Location = new System.Drawing.Point(197, 61);
+            this.radioButton4.Location = new System.Drawing.Point(197, 81);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -685,7 +600,7 @@
             this.radioButton3.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.radioButton3.BorderThickness = 1;
             this.radioButton3.Checked = false;
-            this.radioButton3.Location = new System.Drawing.Point(253, 177);
+            this.radioButton3.Location = new System.Drawing.Point(253, 197);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -704,7 +619,7 @@
             this.radioButton2.BindingControlPosition = Bunifu.UI.WinForms.BunifuRadioButton.BindingControlPositions.Right;
             this.radioButton2.BorderThickness = 1;
             this.radioButton2.Checked = false;
-            this.radioButton2.Location = new System.Drawing.Point(452, 61);
+            this.radioButton2.Location = new System.Drawing.Point(452, 81);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -727,7 +642,7 @@
             this.radioButton1.BorderThickness = 1;
             this.radioButton1.Checked = true;
             this.radioButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radioButton1.Location = new System.Drawing.Point(83, 61);
+            this.radioButton1.Location = new System.Drawing.Point(83, 81);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.OutlineColor = System.Drawing.Color.DodgerBlue;
@@ -738,66 +653,90 @@
             this.radioButton1.Size = new System.Drawing.Size(42, 42);
             this.radioButton1.TabIndex = 33;
             this.radioButton1.Text = null;
-            this.radioButton1.CheckedChanged2 += new System.EventHandler<Bunifu.UI.WinForms.BunifuRadioButton.CheckedChangedEventArgs>(this.radioButton1_CheckedChanged2_1);
             // 
-            // bunifuGroupBox2
+            // videoSourcePlayer1
             // 
-            this.bunifuGroupBox2.Location = new System.Drawing.Point(34, 15);
-            this.bunifuGroupBox2.Name = "bunifuGroupBox2";
-            this.bunifuGroupBox2.Size = new System.Drawing.Size(51, 23);
-            this.bunifuGroupBox2.TabIndex = 39;
+            this.videoSourcePlayer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
+            this.videoSourcePlayer1.Location = new System.Drawing.Point(795, 197);
+            this.videoSourcePlayer1.Name = "videoSourcePlayer1";
+            this.videoSourcePlayer1.Size = new System.Drawing.Size(393, 385);
+            this.videoSourcePlayer1.TabIndex = 50;
+            this.videoSourcePlayer1.Text = "videoSourcePlayer1";
+            this.videoSourcePlayer1.VideoSource = null;
+            this.videoSourcePlayer1.Click += new System.EventHandler(this.videoSourcePlayer1_Click);
             // 
-            // groupBox1
+            // button1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.groupBox1.Controls.Add(this.bunifuGroupBox2);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.textBox_Alamat);
-            this.groupBox1.Controls.Add(this.textBox_Nama);
-            this.groupBox1.Controls.Add(this.textBox_NoHp);
-            this.groupBox1.Controls.Add(this.labelNama);
-            this.groupBox1.Controls.Add(this.textBox_AsalSekolah);
-            this.groupBox1.Controls.Add(this.labelAsalSekolah);
-            this.groupBox1.Controls.Add(this.labelNoHp);
-            this.groupBox1.Controls.Add(this.labelAlamat);
-            this.groupBox1.Location = new System.Drawing.Point(63, 138);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(713, 583);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "o";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.button1.Location = new System.Drawing.Point(795, 663);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(391, 48);
+            this.button1.TabIndex = 51;
+            this.button1.Text = "Hasil";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1200, 106);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.TabIndex = 54;
+            this.label2.Text = "Webcam";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(795, 95);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(395, 21);
+            this.comboBox1.TabIndex = 53;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(813, 207);
+            this.pictureBox2.Image = null;
+            this.pictureBox2.Location = new System.Drawing.Point(795, 144);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(394, 386);
-            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.Size = new System.Drawing.Size(395, 385);
+            this.pictureBox2.TabIndex = 55;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
             // 
-            // Form1
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(857, 616);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 56;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_2);
+            // 
+            // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Controls.Add(this.videoSourcePlayer1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.textBox_Alamat);
+            this.Controls.Add(this.textBox_Nama);
+            this.Controls.Add(this.textBox_NoHp);
+            this.Controls.Add(this.labelNama);
+            this.Controls.Add(this.textBox_AsalSekolah);
+            this.Controls.Add(this.labelAsalSekolah);
+            this.Controls.Add(this.labelNoHp);
+            this.Controls.Add(this.labelAlamat);
+            this.Controls.Add(this.bunifuGroupBox1);
+            this.Controls.Add(this.pictureBox2);
+            this.Name = "Form5";
+            this.Text = "Form5";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -809,8 +748,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -818,24 +755,16 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private AForge.Controls.VideoSourcePlayer videoSourcePlayer1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label labelAlamat;
-        private System.Windows.Forms.Label labelNoHp;
-        private System.Windows.Forms.Label labelAsalSekolah;
-        private System.Windows.Forms.TextBox textBox_AsalSekolah;
-        private System.Windows.Forms.Label labelNama;
-        private System.Windows.Forms.TextBox textBox_NoHp;
-        private System.Windows.Forms.TextBox textBox_Nama;
+
+        private Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox1;
         private System.Windows.Forms.TextBox textBox_Alamat;
+        private System.Windows.Forms.TextBox textBox_Nama;
+        private System.Windows.Forms.TextBox textBox_NoHp;
+        private System.Windows.Forms.Label labelNama;
+        private System.Windows.Forms.TextBox textBox_AsalSekolah;
+        private System.Windows.Forms.Label labelAsalSekolah;
+        private System.Windows.Forms.Label labelNoHp;
+        private System.Windows.Forms.Label labelAlamat;
         private System.Windows.Forms.GroupBox groupBox2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
@@ -864,8 +793,11 @@
         private Bunifu.UI.WinForms.BunifuRadioButton radioButton3;
         private Bunifu.UI.WinForms.BunifuRadioButton radioButton2;
         private Bunifu.UI.WinForms.BunifuRadioButton radioButton1;
-        private Bunifu.UI.WinForms.BunifuGroupBox bunifuGroupBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private AForge.Controls.VideoSourcePlayer videoSourcePlayer1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private AForge.Controls.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button2;
     }
 }
-
